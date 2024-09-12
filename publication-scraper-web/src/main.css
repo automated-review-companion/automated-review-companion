@@ -1,0 +1,202 @@
+/*  Inter as default font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+* {
+  font-family: 'Inter', serif !important
+}
+.custom-tooltip {
+  --bs-tooltip-bg: var(--bd-violet-bg);
+  --bs-tooltip-color: var(--bs-white);
+}
+/* General */
+
+.bg-primary {
+  background: #3691f2 !important; 
+  color: white !important;
+}
+
+.w-5 { 
+  width: 5%; 
+}
+
+.w-10 { 
+  width: 10%; 
+}
+
+.w-90 {
+  width: 90%;
+}
+
+.max-height-30vh {
+  max-height: 30vh;
+}
+
+.overflow-y-scroll {
+  overflow-y: scroll;
+}
+
+.text-red {
+  color: red;
+}
+
+
+
+/* Classes */
+
+#search-bar {
+ background-color: #F0F3F4; 
+}
+
+#publication-data-inner {
+  margin-top: 20px;
+  background-color: #F0F3F4;
+  height: 100vh !important;
+}
+
+#publication-data-table {
+  /* height: 85% !important; */
+  border: 1px solid #F0F3F4;
+  overflow: scroll;
+}
+
+#llm-questions {
+  background-color: #F0F3F4;
+}
+
+#search-history {
+  background-color: #F0F3F4;
+}
+
+input::placeholder {
+  color: #c6c6c6;
+}
+
+.card-body {
+  min-height: 200px;
+  min-width: 200px;
+  margin-right: 5px;
+}
+
+.divider {
+  color: #c6c6c6;
+  border: 1px solid #c6c6c6;
+}
+
+.search-nav-item {
+  background-color: #efefef;
+  border: none;
+  padding: 0.2rem 0.5rem;
+  cursor: pointer;
+}
+
+/* word-variant */
+.word-variant-chip {
+  background-color: #e1e1e1;
+  color: black;
+  border: none;
+  padding: 0.2rem 0.5rem;
+  height: auto;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.word-variant-chip:hover {
+  background-color: #c6c6c6;
+} 
+
+.word-variant-box {
+  width: 400px !important; 
+  max-width: 100% !important;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: break-word;
+  white-space: normal;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.MuiInputBase-root {
+  /* padding: 0 !important; */
+}
+
+input[type="radio"]:checked + label.search-nav-item {
+  background-color: #c6c6c6;
+  color: black;
+}
+
+.search-nav-item:hover {
+  background-color: #9a9a9a !important;
+}
+
+.publication-data-table-cell {
+  max-height: 100px !important;
+  overflow: scroll !important;
+}
+
+.publication-row {
+  /* cursor: pointer; */
+}
+
+.publication-row:hover > td {
+  background-color: #dddddd !important;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table > tbody > tr > td {
+  border: 1px solid #c6c6c65f;
+}
+
+table > thead {
+  position: sticky !important;
+  top: 0;
+  z-index: 1;
+}
+
+.sticky-top {
+  position: -webkit-sticky; /* For Safari */
+  position: sticky;
+  top: 0;
+  background-color: #007bff; /* Matches bg-primary */
+  z-index: 10; /* Ensures it stays on top of other content */
+}
+
+.resizable {
+  position: relative !important;
+  padding-right: 10px !important;
+}
+
+.resizer {
+  position: absolute;
+  top: 0;
+  right: -8px;
+  width: 5px; /* Width of the resizer handle */
+  height: 100%; /* Make the resizer span the entire height of the th */
+  cursor: col-resize;
+  background-color: transparent !important;  /* Invisible but still functional */
+  border: none;
+  z-index: 1; /* Ensure the resizer is above other content */
+  /* background-color: #c62f2f !important; */
+  /* height: 10000% */
+}
+.resizer:hover {
+  background-color: #2f7ac618 !important;
+}
+
+table > thead > tr > th {
+  border: 1px solid #c6c6c65f;
+}
+
+table > thead > td {
+  border: 1px solid #c6c6c65f;
+/* center */
+  text-align: center;
+  /* vertical center */
+  vertical-align: middle;
+  min-width: 100px;
+}
+
